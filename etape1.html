@@ -1,39 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Duel de Blackjack avec un robot!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="utf-8">
-  <title>Duel de Blackjack avec un Robot</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-
-
-
-
-
-  <form id="blackJack" method="get" onSubmit="blackJack(); return false;">
-    <fieldset>
-      <legend>C'est l'heure du DU-DU-DU DUEL !</legend>
-      <div>
-        <span>Entre un nombre entre 0 et 10 si tu l'oses : </span>
-        <input id="humanNumber" type="number" min="1" max="10">
-        <input type="submit" value="Combattre le robot">
-    </fieldset>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+  <header class="card  bg-dark" style="width: 100%;">
+    <div class="card-body">
+        <h4 class="card-title  text-white">Blackjack le robot!</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Viendrez vous à bout du robot prétentieux?</h6>
+        <p class="card-text  text-white">Saisir un chiffre entre 1 et 10. Si le chiffre choisis est supérieur au chiffre du robot, c'est gagné!.</p>
     </div>
-  </form>
+      </header>
+
+  <section class="card mx-auto">
+        <form id="blackjack"  onsubmit="displayHumanNumber(); return false;">
+        <label for="form__bj--number">Choisissez un chiffre entre 0 et 10:</label>
+        <input type="number" id="humanNumber">
+        <input type="button" value="Jouez" onclick="displayHumanNumber()">
+        <label id="human__number--result"></label>
+      </form>
+    </section>
+
+  <section class="card">
+    <div class="card-body">
+      <h4 class="card-title  text-black">Règles du jeu</h4>
+      <h6 class="card-subtitle mb-2 text-muted">Consigne de l'exercice/règles du jeu de Blackjack</h6>
+      <p class="card-text  text-black">Créer une mini application web comprenant une page de saisie de texte et un bouton de validation. Il est demandé au joueur de saisir un chiffre entre 1 et 10. Quand le bouton est actionné, un nombre aléatoire est généré compris entre 0 et 10. Si le nombre généré aléatoirement est inférieur au nombre saisi par l'utilisateur, la page affichera un message de victoire Sinon afficher un message de défaite. En cas d'égalité, la machine gagne.
+
+</p>
+    </div>
+  </section>
 
 
-  <!-- <script type="text/javascript">
-    function formContact_result() {
-      var elem = document.getElementById("blackJack");
-      document.getElementById("formContact__result").innerHTML = elem.value;
-      document.getElementById("formContact__int").value = "";
-    }
-  </script> -->
+      <script type="text/javascript">
+        function displayHumanNumber() {
+          var humanNumber = document.getElementById("humanNumber").value;
+          document.getElementById("human__number--result").innerHTML = "Vous avez joué le " + humanNumber;
+          // alert("hello " + name);
 
-</body>
+        }
 
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>
