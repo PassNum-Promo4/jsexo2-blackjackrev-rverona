@@ -24,3 +24,8 @@ function playGame() {
 
 
 }
+
+window.onload = function initialize(){
+humanNumber.value = "";
+resultDuel.innerHTML = "";
+}
