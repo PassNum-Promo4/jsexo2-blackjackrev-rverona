@@ -22,9 +22,11 @@
         <form id="blackjack"  onsubmit="displayHumanNumber(); return false;">
         <label for="form__bj--number">Choisissez un chiffre entre 0 et 10:</label>
         <input type="number" id="humanNumber">
-        <input type="button" value="Jouez" onclick="displayHumanNumber()">
+        <!-- <input type="button" value="Jouez" onclick="displayHumanNumber()"> -->
+        <input type="button" value="Jouez" onclick="getRandomIntInclusive()">
+
         <label id="human__number--result"></label>
-      </form>
+        </form>
     </section>
 
   <section class="card">
@@ -38,16 +40,8 @@
   </section>
 
 
-      <script type="text/javascript">
-        function displayHumanNumber() {
-          var humanNumber = document.getElementById("humanNumber").value;
-          document.getElementById("human__number--result").innerHTML = "Vous avez joué le " + humanNumber;
-          // alert("hello " + name);
+      <script type="text/javascript" src="js/blackjack.js"></script>
 
-        }
-
-      </script>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
