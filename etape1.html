@@ -1,46 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Duel de Blackjack avec un robot!</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  </head>
-  <body class="bg-light">
+<head>
+  <title>Duel de Blackjack avec un robot!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="container-fluid">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
 
   <header class="card  bg-dark" style="width: 100%;">
-    <div class="card-body container">
-        <h4 class="card-title  text-white">Blackjack le robot!</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Viendrez vous à bout du robot prétentieux?</h6>
+    <div class="card-bodycontainer">
+      <h1 class="card-title  text-white">Blackjack le robot!</h4>
+        <h4 class="card-subtitle mb-2 text-muted">Viendrez vous à bout du robot prétentieux?</h6>
         <p class="card-text  text-white">Saisir un chiffre entre 1 et 10. Si le chiffre choisis est supérieur au chiffre du robot, c'est gagné!.</p>
     </div>
       </header>
 
+      <div class="container-fluid">
+
 <main class="container  pt-5">
 
-  <section class="card text-white bg-dark mb-3">
-          <form id="blackjack" class="m-4">
-        <input class="form-control form-control-lg "type="number" id="humanNumber" min="1" max="10" onsubmit="playGame()" placeholder="Indique un chiffre compris entre 1 et 10.">
-        <!-- <input type="button" value="Jouez" onclick="displayHumanNumber()"> -->
-        <button class="btn btn-primary btn-lg btn-block" value="Jouez" onclick="playGame();">Jouez!</button>
-        <label id="human__number--result"></label>
-        </form>
-    </section>
-
-  <section class="card bg-warning mt-5">
+  <section class="card bg-warning mt-4 mb-5">
     <div class="card-body">
-      <h4 class="card-title  text-black">Règles du jeu</h4>
-      <h6 class="card-subtitle mb-2 text-white">Consigne de l'exercice/règles du jeu de Blackjack</h6>
+      <h2 class="card-title  text-black">Règles du jeu</h4>
+      <h4 class="card-subtitle mb-2 text-white">Consigne de l'exercice/règles du jeu de Blackjack</h6>
       <p class="card-text  text-black">Créer une mini application web comprenant une page de saisie de texte et un bouton de validation. Il est demandé au joueur de saisir un chiffre entre 1 et 10. Quand le bouton est actionné, un nombre aléatoire est généré compris entre 0 et 10. Si le nombre généré aléatoirement est inférieur au nombre saisi par l'utilisateur, la page affichera un message de victoire Sinon afficher un message de défaite. En cas d'égalité, la machine gagne.
 
 </p>
     </div>
   </section>
+
+  <section class="card text-white bg-dark mb-3">
+          <form id="blackjack" class="m-4">
+        <input class="form-control form-control-lg mt-2"type="number" id="humanNumber" min="1" max="10" onsubmit="playGame()" placeholder="Indique un chiffre compris entre 1 et 10.">
+        <!-- <input type="button" value="Jouez" onclick="displayHumanNumber()"> -->
+        <button class="btn btn-primary btn-lg btn-block mt-4" value="Jouez" onclick="playGame();">Jouez!</button>
+        <label id="human__number--result"></label>
+        </form>
+    </section>
+
+
 </div>
 </main>
 
