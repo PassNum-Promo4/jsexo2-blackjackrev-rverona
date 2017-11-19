@@ -15,10 +15,10 @@ function playGame() {
 
   }
   if (humanNumber.value > robotNumber) {
-    alert("Sois maudit humain! Tu as gagné !");
+    alert("Tu as joué le " + humanNumber.value + " et j'ai joué le " + robotNumber + " ,sois maudit humain! Tu as gagné !");
   }
   else {
-    alert("Tu as perdu, comme je l'avais prévu!");
+    alert("Tu as joué le " + humanNumber.value + " et j'ai joué le " + robotNumber + " ,tu as perdu, comme je l'avais prévu!");
   }
 
 }
