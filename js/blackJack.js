@@ -6,19 +6,17 @@ var resultDuel = document.getElementById("human__number--result");
 function playGame() {
   var min = Math.ceil(0);
   var max = Math.floor(10);
-  var robotNumber = Math.floor(Math.random() * (max - min +1)) + min;
+  var robotNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   if (humanNumber.value == "") {
-    alert("Indiquez un nombre !")
-  }
-  else {
-    resultDuel.innerHTML = "Vous avez joué le " + humanNumber.value + " et j'ai joué le " + robotNumber;
+    alert("Indique un nombre bon sang!")
+  } else {
+    if (humanNumber.value > robotNumber) {
+      alert("Tu as joué le " + humanNumber.value + " et j'ai joué le " + robotNumber + " ,sois maudit humain! Tu as gagné !");
+    } else {
+      alert("Tu as joué le " + humanNumber.value + " et j'ai joué le " + robotNumber + " ,tu as perdu, comme je l'avais prévu!");
+    }
 
   }
-  if (humanNumber.value > robotNumber) {
-    alert("Tu as joué le " + humanNumber.value + " et j'ai joué le " + robotNumber + " ,sois maudit humain! Tu as gagné !");
-  }
-  else {
-    alert("Tu as joué le " + humanNumber.value + " et j'ai joué le " + robotNumber + " ,tu as perdu, comme je l'avais prévu!");
-  }
+
 
 }
