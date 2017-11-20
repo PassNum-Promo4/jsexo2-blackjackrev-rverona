@@ -8,10 +8,10 @@ function playGame() {
   var max = Math.floor(10);
   var robotNumber = Math.floor(Math.random() * (max - min + 1)) + min;
   if (humanNumber.value == "") {
-    alert("Indique un nombre bon sang!")
+    alert("Indique un nombre bon sang!");
   }
   else if (humanNumber.value > 10 | humanNumber.value < 1) {
-    alert("Indique un nombre compris entre 1 et 10, moule à gaufre!")
+    alert("Indique un nombre compris entre 1 et 10, moule à gaufre!");
   }
   else {
     if (humanNumber.value > robotNumber) {
